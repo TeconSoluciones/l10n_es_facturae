@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record model="ir.ui.view" id="l10n_es_facturae.res_partner_address_form">
+      <field name="name">l10n_es_facturae.res.partner.address.form</field>
+		  <field name="model">res.partner.address</field>
+		  <field name="inherit_id" ref="base.view_partner_address_form1"/>
+		  <field name="type">form</field>
+		  <field name="arch" type="xml">
+		    <data>
+		      <group colspan="2" col="2">
+                <separator string="Factura-e" colspan="4" col="4"/>
+                <field name="fiscal_code"/>
+                <field name="receiver_code"/>
+                <field name="payer_code"/>
+              </group>    
+        </data>
+      </field>
+    </record>
+  </data>
+</openerp> 
